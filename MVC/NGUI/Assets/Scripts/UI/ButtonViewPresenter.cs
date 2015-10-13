@@ -77,7 +77,7 @@ namespace SocialPoint.Examples.MVC
             IsEnabled = true;
             Button.defaultColor = _buttonOriginalDefaultColor;
             Button.hover = _buttonOriginalHoverColor;
-            Button.UpdateColor(IsEnabled, false);
+            Button.UpdateColor(IsEnabled);
         }
 
         public override void Disable()
@@ -85,7 +85,7 @@ namespace SocialPoint.Examples.MVC
             IsEnabled = false;
             Button.defaultColor = Button.disabledColor;
             Button.hover = Button.disabledColor;
-            Button.UpdateColor(IsEnabled, false);
+            Button.UpdateColor(IsEnabled);
         }
 
         public event EventHandler<ButtonPresenterEventArgs> Clicked;
